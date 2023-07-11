@@ -2,30 +2,31 @@ import { useState } from "react";
 import { Buttons } from "./Buttons";
 
 export const CobaState = () => {
-   const randomQuote: string[] = [
-      "Ayo Makan",
-      "Gas Belajar",
-      "Sudah Paham?",
-      "Ayo aja gw mah",
-      "Yeyyy merdeka",
-      "17 Agustus 2023",
-      "Di rumah",
-      "Sedang Sibuk",
-   ];
-
+   const [randomQuote, setRandomQuote] = useState(["Ayo Makan"]);
    const [greet, setGreet] = useState(0);
-   const [add, setAdd] = useState("");
+   const [newQuote, setNewQuote] = useState("");
 
    const changeGreet = () => {
-      setGreet(() => Math.floor(Math.random() * 8));
+      setGreet(() => Math.floor(Math.random() * randomQuote.length));
+   };
+
+   const addQuote = () => {
+      if (newQuote) {
+         setRandomQuote((prevQuotes) => [...prevQuotes, newQuote]);
+         setNewQuote("");
+      }
    };
 
    return (
       <>
          <h2>{randomQuote[greet]}</h2>
          <Buttons click={changeGreet} task={"ubah"} />
-         <input type='text' />
-         <Buttons click={} />
+         <textarea
+            placeholder='Tambahkan quote baru'
+            value={newQuote}
+            onChange={(e) => setNewQuote(e.target.value)}
+         />
+         <Buttons click={addQuote} task={"Tambah"} />
       </>
    );
 };
