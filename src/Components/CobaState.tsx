@@ -27,7 +27,9 @@ export const CobaState = () => {
 
    return (
       <>
+         {/* Menampilkan kutipan secara acak */}
          <h2>{randomQuote[greet]}</h2>
+         {/* */}
          <Buttons click={changeGreet} task={"ubah"} />
          <textarea
             placeholder='Tambahkan quote baru'
