@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Buttons } from "./Buttons";
 
+//Komponen CobaState
 export const CobaState = () => {
    const [randomQuote, setRandomQuote] = useState(["Ayo Makan"]);
    const [greet, setGreet] = useState(0);
