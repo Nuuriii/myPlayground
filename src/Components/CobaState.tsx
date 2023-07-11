@@ -8,6 +8,8 @@ export const CobaState = () => {
 
    //State untuk menyimpan indeks kutipan yang sedang ditampilkan
    const [greet, setGreet] = useState(0);
+
+   //State untuk menyimpan kutipan baru yang ditambahkan melalui input textarea
    const [newQuote, setNewQuote] = useState("");
 
    const changeGreet = () => {
