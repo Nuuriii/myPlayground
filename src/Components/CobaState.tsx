@@ -12,6 +12,7 @@ export const CobaState = () => {
    //State untuk menyimpan kutipan baru yang ditambahkan melalui input textarea
    const [newQuote, setNewQuote] = useState("");
 
+   //Fungsi untuk menyimpan kutipan baru yang ditampilkan secara acak
    const changeGreet = () => {
       setGreet(() => Math.floor(Math.random() * randomQuote.length));
    };
