@@ -3,6 +3,7 @@ import { Buttons } from "./Buttons";
 
 //Komponen CobaState
 export const CobaState = () => {
+   //State untuk menyimpan daftar kutipan acak
    const [randomQuote, setRandomQuote] = useState(["Ayo Makan"]);
    const [greet, setGreet] = useState(0);
    const [newQuote, setNewQuote] = useState("");
