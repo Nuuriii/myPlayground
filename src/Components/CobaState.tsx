@@ -17,6 +17,7 @@ export const CobaState = () => {
       setGreet(() => Math.floor(Math.random() * randomQuote.length));
    };
 
+   //Fungsi untuk menambahkan baru ke dalam daftar acak
    const addQuote = () => {
       if (newQuote) {
          setRandomQuote((prevQuotes) => [...prevQuotes, newQuote]);
