@@ -14,7 +14,7 @@ Proyek ini lebih mengarah ke pemahaman React Ts dasar seperti Penggunaan State, 
 
 ## Cara Menjalankan
 
-Kamu dapat mencobanya dengan mengunjungi link berikut ...., Atau dengan mengCloning Repo ini.
+Kamu dapat mencobanya dengan mengunjungi link berikut: https://my-playground-chi.vercel.app/, Atau dengan mengCloning Repo ini.
 
 1. Pastikan Anda memiliki Node.js yang terinstal di komputer Anda.
 2. Clone repositori ini ke komputer lokal Anda.
