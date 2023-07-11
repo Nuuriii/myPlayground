@@ -35,7 +35,7 @@ Kontribusi selalu diterima dengan senang hati! Jika kamu ingin berkontribusi pad
 
 1. Fork repositori ini.
 2. Buat branch fitur baru (`git checkout -b fitur-baru`).
-3. Lakukan perubahan yang diperlukan dan commit perubahan tersebut (`git commit -am 'Menambahkan fitur baru'`).
+3. Lakukan perubahan yang diperlukan dan commit perubahan tersebut (`git commit -m 'Menambahkan fitur baru'`).
 4. Push ke branch Anda (`git push origin fitur-baru`).
 5. Buat Pull Request ke default branch pada repositori ini.
 
