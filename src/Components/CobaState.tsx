@@ -37,6 +37,7 @@ export const CobaState = () => {
             value={newQuote}
             onChange={(e) => setNewQuote(e.target.value)}
          />
+         {/* Tombol untuk menambahkan apa yang dituliskan di TextArea */}
          <Buttons click={addQuote} task={"Tambah"} />
       </>
    );
