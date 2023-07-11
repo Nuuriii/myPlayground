@@ -5,6 +5,8 @@ import { Buttons } from "./Buttons";
 export const CobaState = () => {
    //State untuk menyimpan daftar kutipan acak
    const [randomQuote, setRandomQuote] = useState(["Ayo Makan"]);
+
+   //State untuk menyimpan indeks kutipan yang sedang ditampilkan
    const [greet, setGreet] = useState(0);
    const [newQuote, setNewQuote] = useState("");
 
